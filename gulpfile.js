@@ -60,7 +60,5 @@ gulp.task('browser-sync', function() {
   'build/js/*.js']).on('change', browserSync.reload);
 });      
 
-gulp.task('hi', function(){
-console.log('hi');
 });
 

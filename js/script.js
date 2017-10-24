@@ -25,12 +25,12 @@ $('#choose').on('change', function(){
   $('.news').empty();
   
   $.each(news, function (index, value){
-  $('.news').append('<p>' + value.abstract + '</p>' + '<img src=' + value.multimedia[3].url + '>')
+  $('.news').append('<a href="' + value.short_url + '">' + '<img src="' + value.multimedia[3].url + '" alt=photo class="news-photo">' + '</a>' + '<p>' + value.abstract + '</p>')
   });
   
   
-  // }).fail(function(err) {
-  //   console.log('error');
+  }).fail(function(err) {
+    console.log('error');
   
   
   

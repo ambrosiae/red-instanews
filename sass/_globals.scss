@@ -1,6 +1,20 @@
-*, p{
+*{
   font-size: 16px;
   font-family: 'Open Sans', 'sans serif';
-  color: #fff;
+  color: $font-color;
   background-color: #000;
+  box-sizing: border-box;
+}
+
+p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 3vh;
+}
+
+span{
+  letter-spacing: 0.2rem; 
+  text-transform: uppercase;  
 }
