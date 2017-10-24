@@ -1,0 +1,29 @@
+
+
+p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 3vh;
+  letter-spacing: 0.2rem; 
+}
+
+.choose{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  
+
+  option{
+    background: #000;
+    color: $font-color;
+    text-transform: capitalize;  
+  }
+}
+
+.news{
+  display: grid;
+  grid-column: 1/3;
+}
