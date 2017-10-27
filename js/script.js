@@ -1,3 +1,5 @@
+$(document).ready(function () {
+
 $('#choose').on('change', function(){
   event.preventDefault();
   
@@ -12,10 +14,10 @@ $('#choose').on('change', function(){
     method: 'GET'
   }).done(function(news) {
     
-  var news = news.results.slice(0,12);
+  var NYTnews = news.results.slice(0,12);
   //   console.log(news);
   
-  var filtered = $.grep(news, function(n, i){
+  var filtered = $.grep(NYTnews, function(n, i){
     return n.multimedia.length>0});
   console.log(filtered);
   
@@ -25,7 +27,7 @@ $('#choose').on('change', function(){
   $('.news').empty();
   
   $.each(news, function (index, value){
-  $('.news').append('<a href="' + value.short_url + '">' + '<img src="' + value.multimedia[3].url + '" alt=photo class="news-photo">' + '</a>' + '<p>' + value.abstract + '</p>')
+  $('.news > ul').append('<a href="' + value.short_url + '">' + '<img src="' + value.multimedia[3].url + '" alt=photo class="news-photo">' + '<p>' + value.abstract + '</p></a>')
   });
   
   

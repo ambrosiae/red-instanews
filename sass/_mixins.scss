@@ -2,8 +2,9 @@
   @media (min-width: $tablet-width) {
     @content;
   }
-
+}
 @mixin desktop-width {
   @media (min-width: $desktop-width) {
     @content;
   }
+}
