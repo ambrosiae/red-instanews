@@ -60,5 +60,4 @@ gulp.task('browser-sync', function() {
   'build/js/*.js']).on('change', browserSync.reload);
 });      
 
-});
 
