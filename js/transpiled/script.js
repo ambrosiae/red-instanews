@@ -1,10 +1,8 @@
-$('.choose').on('change', function(){
+$('#choose').on('change', function(){
   event.preventDefault();
   
-  $('.header').css({'height':'8rem','padding-top':'2rem'});
+  $('#header').removeClass('logo-start').addClass('logo-end');
   
-  $('.load').css('display', 'block');
-
   var newsSection = $('#choose').val();
   var key = 'e36a9556acdd4164bd355b361d3a195b';
   var url = 'https://api.nytimes.com/svc/topstories/v2/' + newsSection + '.json?api-key=' + key;
@@ -13,7 +11,7 @@ $('.choose').on('change', function(){
     url: url,
     method: 'GET'
   }).done(function(newsResults) {
-    $('.load').css('display', 'none');
+    
   var news = newsResults.results.slice(0,12);
   //   console.log(news);
   
@@ -25,12 +23,14 @@ $('.choose').on('change', function(){
   $('.news').empty();
   
   $.each(news, function (index, value){
-    $('.news').append('<li><a class="news-link" href="' + value.short_url + '">' + '<img src="' + value.multimedia[4].url + '" alt="photo" class="news-photo"></a><p class="news-abstract">' + value.abstract + '</p></li>')
+    $('.news').append('<li><a href="' + value.short_url + '">' + '<img src="' + value.multimedia[4].url + '" alt="photo" class="news-photo"></a><p class="news-abstract">' + value.abstract + '</p></li>')
   });
-
-  $('.news-link').hover(function(){
-    $(this).find('news-abstract').css('z-index', '200')
-  });
+  
+  $('.news-photo').hover(function(){
+    $('.news-abstract').css('opacity', '100');
+    }, function(){
+    $('.news-abstract').css('opacity', '0');
+});
 
   }).fail(function(err) {
     console.log('error');

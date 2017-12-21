@@ -1,5 +1,9 @@
 footer {
   p{
+    display: flex;
+    justify-content: center;
     text-align: center;
+    bottom: 0px;
+    font-family: 'Open Sans', 'sans serif';  
   }
 }

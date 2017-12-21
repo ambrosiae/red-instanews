@@ -1,20 +1,23 @@
 *{
   font-size: 16px;
-  font-family: 'Open Sans', 'sans serif';
-  color: $font-color;
+  color: #fff;
   background-color: #000;
   box-sizing: border-box;
 }
 
 p{
   display: flex;
+  font-family: 'Open Sans', 'sans serif';  
   justify-content: center;
   align-items: center;
-  margin: auto;
-  padding: 3vh;
+  line-height: 2rem;
 }
 
 span{
   letter-spacing: 0.2rem; 
-  text-transform: uppercase;  
+  text-transform: uppercase;
+}
+
+.choose{
+  text-transform: capitalize;
 }

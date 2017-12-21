@@ -1,14 +1,25 @@
-.logo-start{
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 25rem;
+  padding-top: 10rem;
+}
+
+
+.choose{
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
-  height: 50vw;
-  padding-top: 50vw;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+  
 }
 
-.logo-end{
-  height: 5vw;
-  padding-top: 50px;
-  margin: auto;  
+option{
+  background: #800f00;
+  color: #fff;
+  text-transform: capitalize;
 }

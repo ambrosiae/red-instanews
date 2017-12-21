@@ -13,22 +13,24 @@
 <body>
   <img src='images/nyt-logo.svg' alt='logo' class='header' id='header'>
 
-  <p><span>Choose a section:</span></p>
+  <p class='choose'>Choose a section:</p>
 
-<select class='choose'  id='choose'>
+<select class='choose' id='choose'>
   <option>select...</option>
   <option>health</option>
   <option>food</option>
   <option>travel</option>
   <option>opinion</option>
 </select>
-    
-<section class='news', id='news'>
 
-</section>
+  <img class="load" src="images/ajax-loader.gif" alt="loading photo">
 
+<div class="news-wrapper">
+<ul class='news' id='news'>
+</ul>
+</div>
 <footer>
-    <p>© Copyright 2018 Instanews</p>
+    <p>© Copyright 2017 &nbsp;<span> Instanews</span></p>
 </footer>
 <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 <script src="/Users/vanessayang/Desktop/RED/red--instanews/red-instanews/js/script.js"></script>  
