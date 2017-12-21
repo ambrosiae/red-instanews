@@ -25,19 +25,15 @@ $('.choose').on('change', function(){
   $('.news').empty();
   
   $.each(news, function (index, value){
-    $('.news').append('<li><a class="news-link" href="' + value.short_url + '">' + '<img src="' + value.multimedia[4].url + '" alt="photo" class="news-photo"></a><p class="news-abstract">' + value.abstract + '</p></li>')
-  });
-
-  $('.news-link').hover(function(){
-    $(this).find('news-abstract').css('z-index', '200')
+    $('.news').append('<li><a class="news-link" href="' + value.short_url + '">' + '<img class="news-photo src="' + value.multimedia[4].url + '" alt="photo""><p class="news-abstract">' + value.abstract + '</p></a></li>')
   });
 
   }).fail(function(err) {
     console.log('error');
   });
-
-
-
   });
+
+
+ 
   
   // $('#logo').fadeIn(2000);

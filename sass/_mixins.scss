@@ -9,3 +9,18 @@
     @content;
   }
 }
+
+@mixin mobile-flex{
+  width: 100vw;
+  height: 100vw;
+}
+
+@mixin tablet-flex{
+  width: 50vw;
+  height: 50vw;
+}
+
+@mixin desktop-flex{
+  width: 25vw;
+  height: 25vw;
+}
