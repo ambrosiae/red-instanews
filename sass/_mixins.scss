@@ -1,10 +1,10 @@
-@mixin tablet-width {
+@mixin tablet{
   @media (min-width: $tablet-width) {
     @content;
   }
 }
 
-@mixin desktop-width {
+@mixin desktop{
   @media (min-width: $desktop-width) {
     @content;
   }

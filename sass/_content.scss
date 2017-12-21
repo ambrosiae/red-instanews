@@ -7,6 +7,7 @@
 
 .news-wrapper{
   display: flex;
+  flex-flow: row wrap;
   margin: auto;
   
   .news{
@@ -16,6 +17,12 @@
       position: relative;
       flex-flow: column nowrap;
       margin: auto;
+      @include tablet{
+        width: 50vw;
+      }
+      @include desktop{
+        width: 25vw;
+      }
       .news-photo{
         position: relative;
         width: 100%;
