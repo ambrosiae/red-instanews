@@ -7,7 +7,6 @@
   padding-top: 10rem;
 }
 
-
 .choose{
   display: flex;
   justify-content: center;
@@ -15,10 +14,12 @@
   margin: auto;
   margin-top: 2vh;
   margin-bottom: 3vh;
-  
+  text-transform: capitalize;
 }
 
-option{
-  color: #fff;
-  text-transform: capitalize;
+.select{
+  background: #520101;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 30px;
 }

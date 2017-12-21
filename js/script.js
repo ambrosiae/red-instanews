@@ -5,7 +5,7 @@ $('.choose').on('change', function(){
   
   $('.load').css('display', 'block');
 
-  var newsSection = $('#choose').val();
+  var newsSection = $('.choose').val();
   var key = 'e36a9556acdd4164bd355b361d3a195b';
   var url = 'https://api.nytimes.com/svc/topstories/v2/' + newsSection + '.json?api-key=' + key;
     
@@ -31,6 +31,7 @@ $('.choose').on('change', function(){
   }).fail(function(err) {
     console.log('error');
   });
+
   });
 
 
